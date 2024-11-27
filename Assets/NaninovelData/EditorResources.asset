@@ -174,6 +174,9 @@ MonoBehaviour:
     - name: Tarea
       pathPrefix: Scripts
       guid: 6838cda2078b187429a571fe37cc08a8
+    - name: LAb13
+      pathPrefix: Scripts
+      guid: b22072efc1688a640989c74a8afa6779
   - Id: Backgrounds/d3a7f543-5453-4dcb-92f3-e3d27781e922
     Resources:
     - name: calle
@@ -196,11 +199,35 @@ MonoBehaviour:
       guid: 8739d72f43219d947a9c1e952dd74abe
   - Id: Characters/6c311911-f22a-47ab-9977-3c346c7fd4f0
     Resources:
-    - name: HanaParque
+    - name: Akira_calle_smile
       pathPrefix: Characters/Akira
-      guid: bb593837626212448b08f9b951cfbad9
+      guid: 3bf14f6351de5994fbc11d9740d48bc8
+    - name: Akira_festival_smile
+      pathPrefix: Characters/Akira
+      guid: 39c02e8d9d321ad46a2fc0d1bad4b183
+    - name: Akira_parque_neutral
+      pathPrefix: Characters/Akira
+      guid: ed9d02e473dcccc4d92fc4eb68fe2880
+    - name: Akira_casa_neutral
+      pathPrefix: Characters/Akira
+      guid: b4eafe4a5837fc14b96fd78a9eaa3003
+    - name: Akira_salon_neutral
+      pathPrefix: Characters/Akira
+      guid: 67eb96231577bc847809f2e4eea1ed9a
   - Id: Characters/9d759e87-7e25-4445-9710-bdf0ff779b1d
     Resources:
-    - name: kiraParque
+    - name: Hana_salon_smile
       pathPrefix: Characters/Hana
-      guid: ed9d02e473dcccc4d92fc4eb68fe2880
+      guid: 280e5f3a26304a147ab9fb66b166c8fe
+    - name: Hana_calle_thoughtful
+      pathPrefix: Characters/Hana
+      guid: 809b770478c00f44ba93a25b81f79279
+    - name: Hana_parque_happy
+      pathPrefix: Characters/Hana
+      guid: bb593837626212448b08f9b951cfbad9
+    - name: Hana_casa_shy
+      pathPrefix: Characters/Hana
+      guid: 6c43d1e53f8cdf543a8d9f2802f85e33
+    - name: Hana_festival_happy
+      pathPrefix: Characters/Hana
+      guid: 0e0a58a5c811661479ac0d2f170cf428

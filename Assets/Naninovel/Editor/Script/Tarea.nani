@@ -1,0 +1,212 @@
+;Inicio del guion - Introducción
+@char Akira scale:0.6
+@char Hana scale:0.6
+@back salón
+@show Akira Akira_salon_neutral
+@show Hana Hana_salon_smile
+
+Akira: "Hana... ¿Eres tú?"
+@wait 2
+Hana: "(Sonríe suavemente) Sí, Akira. Ha pasado tiempo."
+@wait 2
+Akira: "No puedo creer que estés aquí, después de todo este tiempo."
+@wait 2
+
+;Opciones
+@choice "¿Qué te hizo volver?" goto:.A
+@choice "Me alegra verte. Pensé que no lo haría más." goto:.B
+@choice "No sé si esto es un sueño..." goto:.C
+@stop
+
+#A
+@show Hana Hana_salon_thoughtful
+Hana: "(Suspira) A veces, las memorias pesan demasiado. Necesitaba enfrentar esto."
+@wait 3
+@goto .continue
+
+#B
+@show Hana Hana_salon_smile
+Hana: "(Sonríe) Yo también tenía miedo de que este día nunca llegara."
+@wait 3
+@goto .continue
+
+#C
+@show Akira Akira_salon_thoughtful
+Akira: "Si lo es, no quiero despertar."
+@wait 3
+@goto .continue
+
+#continue
+Hana: "Este lugar... parece tan igual, pero a la vez tan diferente."
+@wait 2
+
+;Cambio de fondo: Parque
+@back parque
+@show Akira Akira_parque_neutral
+@show Hana Hana_parque_happy
+
+Akira: "(Mirando las flores del cerezo) Aquí veníamos después de clases, ¿recuerdas?"
+@wait 2
+Hana: "(Sonríe) Sí, parecía que este lugar era nuestro refugio."
+@wait 2
+
+;Opciones
+@choice "¿Qué pensabas cuando estabas lejos?" goto:.D
+@choice "Siempre pensé que volverías." goto:.E
+@choice "Tal vez no debí quedarme aquí, esperando." goto:.F
+@stop
+
+#D
+@show Hana Hana_parque_thoughtful
+Hana: "(Reflexiva) Pensaba en este parque... en nosotros. Siempre fue difícil."
+@wait 3
+goto:.continue_parque
+
+#E
+@show Hana Hana_parque_happy
+Hana: "¿De verdad? Eso me da esperanza... Pensar que nunca fui olvidada."
+@wait 3
+goto:.continue_parque
+
+#F
+@show Akira Akira_parque_thoughtful
+Hana: "Akira... a veces necesitamos el tiempo para sanar."
+@wait 3
+goto:.continue_parque
+
+#continue_parque
+Akira: "¿Crees que podamos recuperar lo que teníamos?"
+@wait 2
+Hana: "No lo sé... pero quiero intentarlo, si tú también lo deseas."
+@wait 2
+
+;Cambio de fondo: Calle tradicional
+@back calle
+@show Akira Akira_calle_smile
+@show Hana Hana_calle_thoughtful
+
+Hana: "Recuerdo esta calle. Siempre veníamos aquí después de clases, ¿verdad?"
+@wait 2
+Akira: "(Sonríe) Y tú nunca decidías qué comer."
+@wait 2
+Hana: "(Ríe) Bueno, es que siempre quería probarlo todo."
+@wait 2
+
+;Opciones
+@choice "¿Recuerdas aquel día en el festival?" goto:.G
+@choice "Siempre quisiste helado de té verde." goto:.H
+@choice "Este lugar no sería lo mismo sin ti." goto:.I
+@stop
+
+#G
+@show Hana Hana_calle_smile
+Hana: "(Sonríe) ¿Cómo podría olvidarlo? Fue uno de los mejores momentos."
+@wait 3
+goto:.continue_calle
+
+#H
+@show Hana Hana_calle_happy
+Hana: "(Ríe) ¿Cómo lo recuerdas? Eres sorprendente, Akira."
+@wait 3
+goto:.continue_calle
+
+#I
+@show Hana Hana_calle_thoughtful
+Hana: "(Mira a su alrededor) Siempre tuvo más sentido contigo aquí."
+@wait 3
+goto:.continue_calle
+
+#continue_calle
+Akira: "Es extraño cómo el tiempo cambia las cosas, pero deja intactos los recuerdos."
+@wait 2
+Hana: "(Suspira) Y algunos recuerdos nunca se desvanecen."
+@wait 2
+
+;Cambio de fondo: Casa de té
+@back casa_de_té
+@show Akira Akira_casa_neutral
+@show Hana Hana_casa_shy
+
+Akira: "Este lugar tiene algo especial. Parece hecho para conversaciones importantes."
+@wait 2
+Hana: "(Asiente) Sí, es tranquilo... pero también trae nostalgia."
+@wait 2
+
+;Opciones
+@choice "Siempre quise preguntarte algo." goto:.J
+@choice "¿Qué esperas de nosotros ahora?" goto:.K
+@choice "Estoy feliz de que estemos aquí juntos." goto:.L
+@stop
+
+#J
+@show Hana Hana_casa_thoughtful
+Hana: "(Mira curiosa) ¿Qué cosa, Akira?"
+Akira: "¿Por qué nunca me dijiste adiós?"
+Hana: "Porque decirlo me habría roto... Lo siento."
+@wait 4
+goto:.continue_casa
+
+#K
+@show Hana Hana_casa_shy
+Hana: "(Suspira) Espero que podamos entendernos y construir algo nuevo."
+@wait 3
+goto:.continue_casa
+
+#L
+@show Hana Hana_casa_smile
+Hana: "(Sonríe tímidamente) Yo también, Akira. Esto significa mucho para mí."
+@wait 3
+goto:.continue_casa
+
+#continue_casa
+Akira: "A veces, el silencio dice más que las palabras. Pero ahora quiero escucharlo todo."
+@wait 2
+Hana: "Entonces preguntémonos todo lo que nunca dijimos."
+@wait 2
+
+;Cambio de fondo: Festival
+@back festival
+@show Akira Akira_festival_smile
+@show Hana Hana_festival_happy
+
+Hana: "Este lugar siempre fue mágico. Las luces, las risas... todo parece tan vivo."
+@wait 2
+Akira: "(Sonríe) Y tú siempre te emocionabas por los juegos."
+@wait 2
+Hana: "(Ríe) Lo hacía porque quería ganar algo para ti."
+@wait 2
+
+;Opciones finales
+@choice "¿Y si intentamos jugar ahora?" goto:.M
+@choice "Este lugar se siente como un sueño." goto:.N
+@choice "Solo quiero disfrutar este momento contigo." goto:.O
+@stop
+
+#M
+@show Hana Hana_festival_smile
+Hana: "¿Estás seguro? Tal vez te gane como siempre."
+@wait 3
+goto:.final_festival
+
+#N
+@show Hana Hana_festival_happy
+Hana: "(Sonríe) Pero es real, Akira. Y estamos aquí."
+@wait 3
+goto:.final_festival
+
+#O
+@show Hana Hana_festival_thoughtful
+Hana: "(Con ternura) Entonces disfrutémoslo, sin palabras."
+@wait 3
+goto:.final_festival
+
+#final_festival
+Akira: "¿Sabes? Nunca pensé que los cerezos y las luces pudieran combinar tan bien contigo."
+@wait 2
+Hana: "(Sonríe) Siempre tienes esas palabras que me sorprenden, Akira."
+@wait 2
+
+Akira: "Este momento, bajo las estrellas, parece el lugar perfecto para empezar de nuevo."
+@wait 2
+Hana: "(Sonríe) Entonces hagámoslo... juntos."
+@stop
